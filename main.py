@@ -148,12 +148,12 @@ class WebhookHandler(webapp2.RequestHandler):
 
             elif text == '/about':
                 reply(messages['about_message'].decode('utf-8'))
-                setEnabled(chat_id, False)
+                
 
             else:
                 mes = 'Не уверен, что понимаю, о чем ты...'
                 reply(mes.decode('utf-8'))
-                setEnabled(chat_id, False)
+                
 
         # Другие команды начинающиеся не с /
 
